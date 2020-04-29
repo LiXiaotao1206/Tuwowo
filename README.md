@@ -1,2 +1,0 @@
-# Tuwowo
-Tuwowo Android App
