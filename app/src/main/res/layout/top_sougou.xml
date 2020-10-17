@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_sougoufanhui"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="left|center_vertical"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:src="@drawable/fanhui_sougou"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/toptitle_sougou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="兔喔喔影视"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_sougousousuo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right|center_vertical"
+            android:adjustViewBounds="true"
+            android:paddingRight="15dp"
+            android:src="@drawable/sousuo_sougou" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkqianse"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/dstop"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView_dashang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.3"
+                android:paddingLeft="20sp"
+                android:paddingTop="20sp"
+                android:paddingRight="20sp"
+                android:scrollbars="vertical"
+                android:text="      兔喔喔走到现在已经实现许多亲民功能，每周五的夜晚，是兔喔喔开发者们增加功能和修改漏洞的时刻，之所以不断更新，不断前进，是因为有广大兔粉的支持和鼓励，开发者们在繁忙的工作之余，抽出任何可用的一分一秒，为使兔喔喔能够做到完美极致，也热切希望兔粉们能在有一个好的体验的同时，给予我们一点小小的奖赏与动力，临表涕零，不胜感激！"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                >
+
+                <Button
+                    android:id="@+id/btn_dashang"
+                    style="@android:style/Widget.Holo.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#ff5500"
+                    android:text="打赏"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

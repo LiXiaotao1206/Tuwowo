@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "jingpinwu.android.com"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk{abiFilters "armeabi","armeabi-v7a"}
+    }
+
+    //解决编译release失败问题
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+dependencies { 
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:+'
+    implementation 'com.android.support:support-v4:+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:+'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation files('libs/bdasr_V3_20171108_9800a2a.jar')
+    implementation files('libs/com.baidu.tts_2.3.2.20180419_5a5fec8.jar')
+    implementation project(path: ':lrcview')
+    implementation files('libs/jsoup-1.12.1.jar')
+    api 'com.tencent.tbs.tbssdk:sdk:43903'
+    //implementation files('libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar')
+}

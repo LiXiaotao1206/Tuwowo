@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jingpinwu.android.com">
+
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="兔喔喔"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="11598027" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="USFsobPXeZI6fGfSGM8licbP" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="EFPyob372lzhM0sOjqiQmCRHiepWjuDr" />
+        <!-- 请确认集成后的包名是否正确，本demo的包名是com.baidu.speech.recognizerdemo，在build.gradle文件中查看 -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+
+        <activity
+            android:name=".StartActivity"
+            android:label="兔喔喔"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".XLListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ZB_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ZBcontent_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".XLList_ji_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".KWActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".KW_ji_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".WGActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GengxinrizhiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PPWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JSContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JianshuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConcertActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BlockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BtliulanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BTListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JiemianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BetaListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feifeiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".XiaoshuoListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Xiaoshuo_zhangjie_List_Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Xiaoshuo_content_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".ShuomingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuanyuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".JiexiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".LiulanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".XLVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".DataSheetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".DSActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MusicPlayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MusicSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".DouyuMainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DouyuSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DouyuThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.smtt.sdk.VideoActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".BGMService" />
+        <service android:name=".MusicPlayService"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="jingpinwu.android.com.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider" />
+        </provider>
+    </application>
+
+</manifest>
