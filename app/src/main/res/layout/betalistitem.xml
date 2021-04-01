@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="100dp"
+        />
+    <jingpinwu.android.com.MyImageView
+        android:id="@+id/betaimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconmore"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/betatextlist"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+                <TextView
+                    android:id="@+id/betatitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:singleLine="false"
+                    android:text="M1905高清电影"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/betatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="游戏  2018-4-1 12:00"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/guanyutop" />
+    <EditText
+        android:id="@+id/editTextshuoming"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bkqianse_1"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="#eeeeee"
+        android:textSize="20sp">
+
+
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="20sp"
+        android:layout_height="180sp"
+        />
+    <jingpinwu.android.com.MyImageView android:id="@+id/xlimg"
+        android:layout_width="120sp"
+        android:layout_height="160sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/jiazaizhong"
+        />"
+    <LinearLayout
+        android:id="@+id/xltextlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="10sp" />
+        <LinearLayout
+            android:id="@+id/xltextlist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/xlname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="电影名称"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="15sp" />
+            <TextView
+                android:id="@+id/xlactor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="主演"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="10sp" />
+            <TextView
+                android:id="@+id/xltype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="类型"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="10sp" />
+            <TextView
+                android:id="@+id/xltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="时间"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="10sp" />
+            <TextView
+                android:id="@+id/xlbeizhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="备注"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

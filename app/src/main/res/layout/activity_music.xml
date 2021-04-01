@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jingpinwu.android.com.BitmapLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/music_play_bk_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/musicplaybk"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_music_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal|bottom"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="26sp"/>
+    <TextView
+        android:id="@+id/tv_music_author"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+    <me.wcy.lrcview.LrcView
+        android:id="@+id/lrc_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:lrcAnimationDuration="1000"
+        app:lrcCurrentTextColor="#55ee55"
+        app:lrcDividerHeight="24dp"
+        app:lrcLabel="@string/lrc_label"
+        app:lrcNormalTextColor="#eeeeee"
+        app:lrcNormalTextSize="16sp"
+        app:lrcPadding="40dp"
+        app:lrcTextGravity="center"
+        app:lrcTextSize="20sp"
+        app:lrcTimeTextColor="#eeeeee"
+        app:lrcTimelineColor="#80eeeeee"
+        app:lrcTimelineTextColor="#9FA8DA"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp" />
+
+<include layout="@layout/layout_music_bottom"/>
+
+
+
+</jingpinwu.android.com.BitmapLinearLayout>
